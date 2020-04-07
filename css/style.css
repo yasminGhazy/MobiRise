@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 48px !important;
+    font-weight: 300 !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    font-weight: 300 !important;
+}
+
+strong {
+    font-weight: bold !important;
+}
+
+div {
+    display: block;
+}
+
+.active-nav {
+    background-color: #169fe6;
+}
+
+li {
+    list-style: none;
+}
+
+.grey {
+    color: #232323;
+}
+
+.white-clr {
+    color: #fff !important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    font-weight: 400;
+}
+
+.nav-link:hover:not(.navbar-brand) {
+    color: #fff;
+    border-bottom: 3px solid #4284df;
+}
+
+.navbar li:not(.navbar-brand) {
+    padding: 10px 20px;
+    padding-bottom: 0px;
+}
+
+.nav-link {
+    transition: .2s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.fa-arrow-right {
+    padding-right: 10px;
+    padding-left: 10px;
+    visibility: hidden !important;
+}
+
+.dropdown-item:hover {
+    background-color: #232323 !important;
+}
+
+.dropdown-item:hover .fa-arrow-right {
+    visibility: visible !important;
+}
+
+.dropdown-item {
+    padding: 0px !important;
+    width: auto;
+}
+
+.dropdown-item a {
+    padding-left: 10px !important;
+}
+
+#btn-nav .btn {
+    padding: 5px 24px;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-left: -10px;
+}
+
+.navbar .container-fluid {
+    margin: 0px 80px auto !important;
+}
+
+.dropdown-item:hover a {
+    color: #4284df !important;
+}
+
+.dropdown .dropdown-menu {
+    background: #232323;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav::after {
+    clear: both;
+}
+
+#features {
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-image: url("../images/feature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(#eb4e6f -10%, #4284df 75%);
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.8;
+}
+
+#features-content {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    font-weight: 800;
+    font-size: 68px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#features-content h1 {
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    font-size: 4.25rem;
+    top: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+
+#insurance-content {
+    background-image: url("../images/insurance2.jpg");
+    z-index: 100;
+}
+
+#insurance-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-weight: 300;
+}
+
+.insurance h2 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.insurance img {
+    width: 100%;
+}
+
+.insurance .overlay {
+    background: linear-gradient(90deg, #0c57bf, #6441a5);
+    opacity: .9;
+}
+
+.insurance .col-6 {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#flexible-bg {
+    position: relative;
+    background-image: url("../images/flexable.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#flexible .overlay {
+    background: linear-gradient(90deg, #d6173f, #4284df)!important;
+    opacity: .2;
+}
+
+#flexible-text {
+    position: relative;
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    z-index: 2;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+#flexible-text p {
+    color: #464646;
+}
+
+#lap {
+    position: relative;
+    background-image: url("../images/insurance2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#lap .overlay {
+    background: linear-gradient(90deg, #0c57bf, #21b968);
+    opacity: .8;
+}
+
+#lap-con {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+
+#bluebg-container {
+    position: relative;
+    background-color: #4284df;
+    background: linear-gradient(90deg, #4284df, #04367c);
+    color: #fff;
+    font-weight: 500 !important;
+}
+
+#bluebg-container h2, h3 {
+    font-weight: 500 !important;
+}
+
+#bluebg-container h2 {
+    font-size: 40px !important;
+    display: inline-block;
+}
+
+#bluebg-container img {
+    width: 100%;
+}
+
+#owner {
+    background-color: #f9f9f9;
+}
+
+.owner-content {
+    text-align: center;
+}
+
+.owner-content p {
+    color: #232323;
+    font-weight: 300 !important;
+    font-size: 17px;
+}
+
+.owner-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.owner-content::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    display: inline-block;
+    padding-top: 2px;
+    background-color: #4284df;
+}
+
+.owner-pic {
+    text-align: center;
+}
+
+#team h3 {
+    font-weight: 300 !important;
+}
+
+#team h5 {
+    color: #4e6dcc;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.team-pic {
+    text-align: center;
+}
+
+.team-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team-content {
+    text-align: center;
+}
+
+.team-content p {
+    color: #232323;
+    font-weight: 300 !important;
+    font-size: 17px;
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+    display: inline !important;
+}
+
+#organizational {
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#organizational h3 {
+    font-weight: 400 !important;
+    line-height: 1.3;
+}
+
+#organizational img {
+    width: 100%;
+}
+
+#organizational span {
+  
+    font-size: 32px;
+    font-weight: 500;
+    color: #767676;
+    float: left;
+}
+#organizational p{
+    color:#464646;
+}
+
+#news span{
+   font-family: Poppins;
+   display: inline-block;
+    background-color: #d6173f;
+   
+    color: #fff;
+}
+#news img {
+    width: 100%;
+}
+
+#news {
+    background-color: #f9f9f9;
+}
+
+.banking-img {
+    width: 48px;
+    height: 48;
+}
+
+.opening-hours {
+    background-color: #4284df;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.opening-hours li:not(:first-child) {
+    border-top: 1px solid;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 955px) and (min-width: 768px) {}
+
+@media only screen and (max-width: 767px) {}
+
+footer {
+    background-color: #efefef;
+}
+
+footer p {
+    font-size: 14px;
+}
