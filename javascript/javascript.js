@@ -1,47 +1,89 @@
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
+    loop: true,
+    margin: 10,
+    nav: true,
     navText: [
         '<i class="fa fa-fw fa-chevron-left" ></i>',
         '<i class="fa fa-fw fa-chevron-right" ></i>'
     ],
-dots:false,
-    responsive:{
-        0:{
-            items:1
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
         },
-        700:{
-            items:1
+        700: {
+            items: 1
         },
-        1020:{
-            items:1
+        1020: {
+            items: 1
         }
     }
 
-  
+
 });
 /*
-$(document).ready(function() {
+$( window ).resize(function() {
 
-    $(window).scroll(function() {
+    var width = $(window).width();
+    if (width <= 991 ) {
+        $('.navbar-nav').addClass('custom');
+        $('.navbar').addClass('navbar-expand-md');
+        $('.navbar').removeClass('navbar-expand');
 
-       var height = $('.navbar').height();
-     
-        var scrollTop = $(window).scrollTop();
+        $('.collapse-custom').removeClass('custom');
 
-        if (scrollTop >= height ) {
+    }
+    else if (width > 991 ) {
+        $('.navbar').removeClass('navbar-expand-md');
+        $('.navbar').addClass('navbar-expand');
+        $('.navbar-nav').removeClass('custom'); 
+        $('.collapse-custom').addClass('custom');
+    }
+
+});*/
+let height = $('.navbar-expand-lg').height();
+let scrollTop = $(window).scrollTop();
+
+$(document).ready(function () {
+
+    if (scrollTop >= height) {
+        $('.navbar').addClass('navbar-dark');
+        $('.navbar').addClass('bg-dark');
+        
+    } else {
+        $('.navbar').removeClass('navbar-dark');
+        $('.navbar').removeClass('bg-dark');
+    
+    }
+
+    $(window).scroll(function () {
+        let height = $('.navbar-expand-lg').height();
+        let scrollTop = $(window).scrollTop();
+      
+        if (scrollTop >= height  ) {
             $('.navbar').addClass('navbar-dark');
             $('.navbar').addClass('bg-dark');
 
-        } else {
+        } else  {
             $('.navbar').removeClass('navbar-dark');
             $('.navbar').removeClass('bg-dark');
-
         }
+      
 
     });
-});*/
+});
+
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+
+$('#navbarSupportedContent').on('shown.bs.collapse', function () {
+    
+    $('.navbar').addClass('navbar-dark');
+    $('.navbar').addClass('bg-dark');
+  })
+  
+/*
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -55,3 +97,4 @@ function myFunction() {
     document.getElementById('nav-container').classList.remove ( "navbar-dark");
     document.getElementById('nav-container').classList.remove ( "bg-dark");
 }}
+*/
